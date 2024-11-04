@@ -1,6 +1,7 @@
 const form = document.querySelector("#form");
 const searchName = document.querySelector("#searchName");
 const error = document.querySelector(".alert");
+import { artDinam } from "./artDinam";
 
 export function resultForm() {
     form.addEventListener("submit", (e) => {
@@ -23,7 +24,6 @@ export function resultForm() {
             } else {
                 error.textContent = "";
             }
-            console.log(data);
             artDinam(data);
         } catch (error) {
             console.error("Error ===> ", error);
