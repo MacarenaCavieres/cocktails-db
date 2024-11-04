@@ -26,12 +26,13 @@ export function initRandomCocktail() {
         const princ = drinks[0];
         imageRandom.src = princ.strDrinkThumb;
         imageRandom.alt = princ.strDrink;
-        nameRandom.textContent += princ.strDrink;
-        namRandom.textContent += " " + princ.strDrink;
-        instRandom.textContent += " " + princ.strInstructions;
-        glassRandom.textContent += " " + princ.strGlass;
+        nameRandom.textContent = princ.strDrink;
+        namRandom.textContent = `Name: ${princ.strDrink}`;
+        instRandom.textContent = `Instructions: ${princ.strInstructions}`;
+        glassRandom.textContent = `Glass: ${princ.strGlass}`;
         catRandom.textContent = `Category: ${princ.strCategory}`;
         categoryRandom.textContent = `Category: ${princ.strCategory}`;
+        ingrRandom.textContent = "Ingredients: ";
 
         for (let i = 1; i <= 15; i++) {
             const measure = princ["strMeasure" + i];

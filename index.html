@@ -35,7 +35,7 @@
                     <div class="flex flex-col">
                         <label for="searchName" class="text-3xl md:text-4xl mb-2">Search by name</label>
                         <div class="flex mr-1 text-start justify-center">
-                            <div class="relative">
+                            <div class="relative w-full">
                                 <span class="icon absolute left-1 top-2">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </span>
@@ -55,7 +55,7 @@
                             </button>
                         </div>
 
-                        <p class="alert"></p>
+                        <p class="alert text-secondary mt-3 text-xl"></p>
                     </div>
                 </form>
             </div>
@@ -73,7 +73,7 @@
                 class="modalDin fixed inset-0 w-full md:w-11/12 h-full grid place-items-center invisible -z-10 text-black mx-auto"
             >
                 <div
-                    class="modalContainerDin bg-modal w-auto h-3/6 text-center grid place-items-center relative border-double border-4 border-black rounded-md p-12 overflow-auto"
+                    class="modalContainerDin bg-modal w-11/12 h-5/6 md:h-3/6 text-center grid place-items-center relative border-double border-4 border-black rounded-md p-12 overflow-auto"
                 >
                     <button type="button" class="closeModalDin absolute top-4 right-4 text-2xl">X</button>
                     <h4 class="namDin text-2xl font-semibold">Name:</h4>
@@ -96,8 +96,8 @@
                             class="imgDin w-full transform transition-transform hover:scale-110 hover:rotate-2 h-auto rounded-t-lg"
                         />
                     </div>
-                    <h2 class="nameDin text-xl text-article font-bold mt-4">B-52</h2>
-                    <h3 class="categoryDin text-xl text-article font-bold mt-4">Category:</h3>
+                    <h2 class="nameDin text-2xl text-article font-bold mt-4">B-52</h2>
+                    <h3 class="categoryDin text-xl text-article mt-4">Category:</h3>
                     <button
                         type="button"
                         class="btnPrepDin mt-4 bg-article text-quaternary rounded-md px-3 py-1"
@@ -144,7 +144,7 @@
                     class="modal fixed inset-0 w-full md:w-11/12 h-full grid place-items-center invisible -z-10 text-black mx-auto"
                 >
                     <div
-                        class="modalContainer bg-modal w-auto h-3/6 text-center grid place-items-center relative border-double border-4 border-black rounded-md p-12 overflow-auto"
+                        class="modalContainer bg-modal w-11/12 h-5/6 md:h-3/6 text-center grid place-items-center relative border-double border-4 border-black rounded-md p-12 overflow-auto"
                     >
                         <button
                             type="button"
@@ -152,11 +152,11 @@
                         >
                             X
                         </button>
-                        <h4 class="namRandom font-semibold">Name:</h4>
+                        <h4 class="namRandom font-semibold"></h4>
                         <p class="ingrRandom">Ingredients:</p>
-                        <p class="instRandom">Instructions:</p>
-                        <p class="glassRandom">Glass:</p>
-                        <p class="categoryRandom">Category:</p>
+                        <p class="instRandom"></p>
+                        <p class="glassRandom"></p>
+                        <p class="categoryRandom"></p>
                     </div>
                 </div>
             </div>
