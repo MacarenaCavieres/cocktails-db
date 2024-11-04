@@ -1,6 +1,7 @@
 const btnRandom = document.querySelector("#btnRandom");
 const imageRandom = document.querySelector(".imageRandom");
 const nameRandom = document.querySelector(".nameRandom");
+const namRandom = document.querySelector(".namRandom");
 const ingrRandom = document.querySelector(".ingrRandom");
 const instRandom = document.querySelector(".instRandom");
 const glassRandom = document.querySelector(".glassRandom");
@@ -25,7 +26,8 @@ export function initRandomCocktail() {
         const princ = drinks[0];
         imageRandom.src = princ.strDrinkThumb;
         imageRandom.alt = princ.strDrink;
-        nameRandom.textContent = princ.strDrink;
+        nameRandom.textContent += princ.strDrink;
+        namRandom.textContent += " " + princ.strDrink;
         instRandom.textContent += " " + princ.strInstructions;
         glassRandom.textContent += " " + princ.strGlass;
         catRandom.textContent = `Category: ${princ.strCategory}`;
@@ -46,13 +48,13 @@ export function initRandomCocktail() {
     });
 
     btnPrep.addEventListener("click", () => {
-        modal.classList.remove("invisible", "z-[-10]");
+        modal.classList.remove("invisible", "-z-10");
         modal.classList.add("visible", "z-10");
     });
 
     closeModal.addEventListener("click", () => {
         modal.classList.remove("visible", "z-10");
-        modal.classList.add("invisible", "z-[-10]");
+        modal.classList.add("invisible", "-z-10");
     });
 
     connectApi();
