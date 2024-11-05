@@ -6,7 +6,6 @@ import { artDinam } from "./artDinam";
 export function resultForm() {
     form.addEventListener("submit", (e) => {
         e.preventDefault();
-        console.log(searchName.value);
         const inputName = searchName.value.trim().toLowerCase();
         findOne(inputName);
         searchName.value = "";

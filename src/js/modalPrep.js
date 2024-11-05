@@ -13,9 +13,6 @@ export const modalPrep = (target) => {
     catDin.textContent = "";
     ingrDin.textContent = "Ingredients: ";
 
-    closeModalDin.addEventListener("click", () => {
-        modalDin.classList.remove("openModalDin");
-    });
     namDin.textContent = "Name: " + target.strDrink;
     instDin.textContent += "Instructions: " + target.strInstructions;
     glassDin.textContent += "Glass: " + target.strGlass;

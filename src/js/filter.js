@@ -1,5 +1,5 @@
-const letters = document.querySelector("#letters");
 import { artDinam } from "./artDinam";
+const letters = document.querySelector("#letters");
 
 export function initFilters() {
     const displayLetters = () => {

@@ -1,14 +1,13 @@
+import { modalPrep } from "./modalPrep";
 const sectDin = document.querySelector("#sectDin");
 const template = document.querySelector("#template").content;
 const fragment = document.createDocumentFragment();
 const modalDin = document.querySelector(".modalDin");
-import { modalPrep } from "./modalPrep";
 
-export const artDinam = (data) => {
+export const artDinam = ({ drinks }) => {
     sectDin.textContent = "";
-    const result = data.drinks;
 
-    result.forEach((item) => {
+    drinks.forEach((item) => {
         const clone = template.cloneNode(true);
         clone.querySelector(".imgDin").src = item.strDrinkThumb;
         clone.querySelector(".imgDin").alt = item.strDrink;

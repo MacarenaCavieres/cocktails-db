@@ -25,13 +25,14 @@ export function initRandomCocktail() {
     const displayCocktail = ({ drinks }) => {
         const princ = drinks[0];
         imageRandom.src = princ.strDrinkThumb;
-        imageRandom.alt = princ.strDrink;
+        imageRandom.alt = `Imagen ${princ.strDrink}`;
         nameRandom.textContent = princ.strDrink;
-        namRandom.textContent = `Name: ${princ.strDrink}`;
-        instRandom.textContent = `Instructions: ${princ.strInstructions}`;
-        glassRandom.textContent = `Glass: ${princ.strGlass}`;
         catRandom.textContent = `Category: ${princ.strCategory}`;
+
+        namRandom.textContent = `Name: ${princ.strDrink}`;
         categoryRandom.textContent = `Category: ${princ.strCategory}`;
+        glassRandom.textContent = `Glass: ${princ.strGlass}`;
+        instRandom.textContent = `Instructions: ${princ.strInstructions}`;
         ingrRandom.textContent = "Ingredients: ";
 
         for (let i = 1; i <= 15; i++) {
