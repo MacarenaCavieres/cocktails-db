@@ -22,13 +22,22 @@ export function initFilters() {
                 "hover:text-modal"
             );
 
-            anchor.addEventListener("click", () => {
-                filterLetter(letter);
-            });
+            anchor.dataset.letter = letter;
+
+            // anchor.addEventListener("click", () => {
+            //     filterLetter(letter);
+            // });
 
             letters.appendChild(anchor);
         }
     };
+
+    letters.addEventListener("click", (e) => {
+        const letter = e.target.dataset.letter;
+        if (letter) {
+            filterLetter(letter);
+        }
+    });
 
     const filterLetter = async (letter) => {
         try {
