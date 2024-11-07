@@ -24,10 +24,6 @@ export function initFilters() {
 
             anchor.dataset.letter = letter;
 
-            // anchor.addEventListener("click", () => {
-            //     filterLetter(letter);
-            // });
-
             letters.appendChild(anchor);
         }
     };

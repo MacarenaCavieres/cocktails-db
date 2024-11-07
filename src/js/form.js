@@ -7,6 +7,7 @@ export function resultForm() {
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         const inputName = searchName.value.trim().toLowerCase();
+        if (!inputName) return (error.textContent = "Enter a name");
         findOne(inputName);
         searchName.value = "";
     });
